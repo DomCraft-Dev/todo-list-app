@@ -1,0 +1,21 @@
+body{
+    font-family: sans-serif;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+button{
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.Deletebtn{
+    padding-left: 20px;
+}
+.Deletebtn:hover{
+    cursor: pointer;
+    
+}
+li{
+    border-bottom: 1.5px solid black;
+}
