@@ -10,7 +10,8 @@ button{
     cursor: pointer;
 }
 .Deletebtn{
-    padding-left: 20px;
+    padding: 20px;
+    margin-left: 20px;
 }
 .Deletebtn:hover{
     cursor: pointer;
@@ -18,4 +19,11 @@ button{
 }
 li{
     border-bottom: 1.5px solid black;
+}
+.done{
+    text-decoration: line-through;
+    color: #999;
+}
+.done:hover{
+    cursor: pointer;
 }

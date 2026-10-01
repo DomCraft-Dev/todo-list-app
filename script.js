@@ -7,20 +7,35 @@ function DeleteTodo(id){
 todos = todos.filter(t=> t.id !== id);
 render();
 }
-
+function toggleTodo(id){
+const todo =todos.find(t=>t.id === id);
+if(todo){
+    todo.done = !todo.done;
+}
+render();
+};
 function render(){
     todoList.innerHTML = "";
     todos.forEach(t=>{
         const li =document.createElement("li");
         li.textContent =t.text;
-        const Deletebtn =document.createElement("btn");
+        const Deletebtn =document.createElement("button");
         Deletebtn.textContent ="🗑️";
         Deletebtn.classList.add("Deletebtn");
 
-        Deletebtn.addEventListener("click",() => DeleteTodo(t.id));
+        Deletebtn.addEventListener("click",(e) =>{
+            e.stopPropagation();
+            DeleteTodo(t.id);
+        });
 
-        todoList.appendChild(li);
+        li.addEventListener("click",() =>toggleTodo(t.id));
+        if(t.done){
+            li.classList.add("done");
+        }
+
         li.appendChild(Deletebtn);
+        todoList.appendChild(li);
+        
     });
 };
 btnAdd.addEventListener("click",function(){
