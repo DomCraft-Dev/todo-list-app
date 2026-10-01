@@ -37,6 +37,12 @@ function render(){
         todoList.appendChild(li);
         
     });
+    const total = todos.length;
+    const done = todos.filter(t=>t.done).length;
+    const remaning = total - done;
+
+    const staus = document.getElementById("stats");
+    staus.textContent = `${total}tasks .${done}completed . ${remaning}remaning`;
 };
 btnAdd.addEventListener("click",function(){
     const text =todoInput.value.trim();
