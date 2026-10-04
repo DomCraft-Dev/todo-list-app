@@ -1,29 +1,37 @@
-body{
-    font-family: sans-serif;
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
+body {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
 }
 
-button{
-    padding: 8px 16px;
-    cursor: pointer;
+#filters {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
 }
-.Deletebtn{
-    padding: 20px;
-    margin-left: 20px;
+
+#filters button {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
 }
-.Deletebtn:hover{
-    cursor: pointer;
-    
+
+#filters button.active {
+  background: #3B82F6;
+  color: white;
 }
-li{
-    border-bottom: 1.5px solid black;
+
+.done {
+  text-decoration: line-through;
+  color: #999;
 }
-.done{
-    text-decoration: line-through;
-    color: #999;
-}
-.done:hover{
-    cursor: pointer;
+
+.Deletebtn {
+  margin-left: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
