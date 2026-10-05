@@ -4,7 +4,7 @@ const btnAdd = document.getElementById("add");
 const todoList = document.getElementById("todolist");
 
 // State
-let todos = [];
+let todos = JSON.parse(localStorage.getItem("todos")) || [];
 let filter = "all";
 
 // حذف
@@ -64,6 +64,9 @@ function render() {
   
   document.getElementById("stats").textContent = 
     `${total} tasks • ${done} completed • ${remaining} remaining`;
+
+  //locall Storage:
+  localStorage.setItem("todos", JSON.stringify(todos));
 }
 
 // اضافه کردن
@@ -94,3 +97,5 @@ filterBtns.forEach(btn => {
     render();
   });
 });
+// برای صدا زدن حافظه loacl storage
+render();
