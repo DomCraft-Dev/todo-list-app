@@ -2,7 +2,7 @@
 
 A modern, minimal Todo application built with vanilla JavaScript. Features filter, localStorage persistence, and a clean UI.
 
-![Todo App Screenshot](./screenshots/desktop.png)
+![Todo App Screenshot](./ScreenShots/desktop.png)
 
 ## ✨ Features
 
@@ -30,10 +30,10 @@ A modern, minimal Todo application built with vanilla JavaScript. Features filte
 ## 📸 Screenshots
 
 ### Desktop
-![Desktop View](./screenshots/desktop.png)
+![Desktop View](./ScreenShots/desktop.png)
 
 ### Mobile
-![Mobile View](./screenshots/mobile.png)
+![Mobile View](./ScreenShots/mobile.png)
 
 ## 🏃 How to Run
 
