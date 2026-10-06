@@ -99,3 +99,9 @@ filterBtns.forEach(btn => {
 });
 // برای صدا زدن حافظه loacl storage
 render();
+// Enter برای اضافه کردن
+todoInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    btnAdd.click();   // ← دکمه‌ی Add رو "کلیک" کن
+  }
+});
