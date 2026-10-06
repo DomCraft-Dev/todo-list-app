@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Todo List App</title>
 </head>
 <body>
+    <div class="container">
   <header>
     <h3>Todo List App</h3>
     <p id="stats"></p>
   </header>
   
-  <main>
+    <div class="inputgroup">
     <input type="text" id="todoinput" placeholder="Add a task...">
     <button id="add">Add</button>
+    </div>
     
     <div id="filters">
       <button data-filter="all" class="active">All</button>
@@ -23,7 +27,8 @@
     </div>
     
     <ul id="todolist"></ul>
-  </main>
+  
+  </div>
   
   <script src="script.js"></script>
 </body>
