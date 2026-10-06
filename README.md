@@ -25,7 +25,7 @@ A modern, minimal Todo application built with vanilla JavaScript. Features filte
 
 ## 🔗 Live Demo
 
-👉 [View Live Demo](https://your-project.vercel.app)
+👉 [View Live Demo](https://todo-list-app-beta-one.vercel.app)
 
 ## 📸 Screenshots
 
